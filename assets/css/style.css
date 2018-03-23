@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+/*--------------------------------------------------Hero Image--*/
+
+.callout-container {
+    height: 100vh;
+    background: url("../images/hero-01.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: transparent;
+}
+
+/*--------------------------------------------------Font Colours--*/
+.jumbotron .h1, .jumbotron h1 {
+    color: #ffffff;
+}
+
+.jumbotron .p, .jumbotron p {
+    color: #ffffff;
+}
+
+/*--------------------------------------------------Font Styles--*/
+
+.navbar-nav a {
+    font-family: "Ubuntu+Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.navbar-nav li>a {
+    font-family: "Ubuntu+Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+
+/*--------------------------------------------------Nav Bar--*/
+.navbar {
+    position: absolute;
+    margin-bottom: 0;
+    top: 0;
+    left: 0;
+    border: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.1);
+    
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+
+.navbar-default .navbar-brand {
+    color: rgba(253, 253, 253, 0.8);
+    transition-duration: .4s;
+}
+
+.navbar .navbar-brand:hover {
+    color: #ffffff;
+}
+
+.navbar .navbar-brand:focus {
+    color: #ffffff;
+}
+
+.navbar .navbar-brand>li>a:focus {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav>li>a {
+    color: rgba(253, 253, 253, 0.8);
+    transition-duration: .4s;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    transition-duration: .4s;
+}
+
+/*--------------------------------------------------Butons--*/
+
+button {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    background-color: rgba(3, 241, 29, 0.73);
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: inherit;
+    border-image: initial;
+}
+
+button-close,
+.close {
+    color:#ff0000;
+}
+
+button-close,
+.close:hover {
+    color:#ff0000;
+}
+/*--------------------------------------------------Hover--*/
+
+
+
+/*--------------------------------------------------Footer--*/

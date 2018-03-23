@@ -6,16 +6,94 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-    <link rel="stylesheet" href="asets/css/style.css" type="text/css" />
-    <title>Document</title>
-    <h1>Hello World</h1>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <title>Irish Drone Club</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <nav class="navbar navbar-default">
+            <!--<div class="row">
+                <div class="col-xs-12">-->
+                    <div class="container-fluid">
+                        <div class="navbar-header"> 
+                        <a href="#" class="navbar-brand">Home</a>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Photography</a></li>
+                                <li class="visible-xs"><a href="#">Sign In</a></li>
+                            </ul>
+                            <div class="navbar-header navbar-right hidden-xs">
+                                <a href="#" class="btn btn-default navbar-btn">Sign In</a>
+                            </div>    
+                        </div>
+                     </div>
+                 <!--</div>
+           </div>-->
+        </nav>
+         <div class="container-fluid callout-container">
+            <div class="class opaque-overlay">&nbsp;</div>
+            <div class="row">
+                    <div class="col-xs-12">
+                        <section class="callout jumbotron text-center">
+                            <h1 class="jumbotron-header">Irish Drone Club</h1>
+                            <hr class="block-divider block-divider--long">
+                            <p class="jumbotron-paragraph">Sign Up To Join The Club</p>
+                            <p><button class="btn btn-lg btn--cta" data-toggle="modal" data-target="#signUpModal">Sign Up!</button></p>
+                        </section>
+                    </div>
+            </div>
+        </div>
+    </header>
     <section>
         <article></article>
         <asside></asside>
     </section>
     <footer></footer>
+    
+        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button button-close" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Membership Sign Up!</h4>
+              </div>
+              <div class="modal-body">
+                <form>
+                      <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                            <p class="help-block">We'll never share your email address with anyone</p>
+                      </div>
+                      <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                            <label for="passwordRepeat">Repeat Password</label>
+                            <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat Your Password">
+                      </div>
+                             <button type="submit" class="btn btn--cta btn--whiskeyYellow">Sign Up!</button>
+                </form>
+              </div>
+              </div>
+          </div>
+        </div>
+    <!-- /.Modal -->
+        
+        <!-- Latest compiled and minified JQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!-- /.Latest compiled and minified JQuery -->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- /. Latest compiled and minified JavaScript -->
 </body>
 </html>
