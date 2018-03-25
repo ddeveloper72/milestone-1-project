@@ -48,8 +48,37 @@
     font-weight: 600;
 }
 
+.navbar-btn-collaps {
+    font-family: "Ubuntu+Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
 
+.uppercase {
+    text-transform: uppercase;
+}
 
+.sub-heading {
+    font-family: "Ubuntu+Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.plain-text {
+    font-family: "Ubuntu+Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.footer,
+.sub-heading {
+color: #ffffff
+}
+
+.footer,
+.plain-text {
+color: #ffffff
+}
 
 /*--------------------------------------------------Nav Bar--*/
 .navbar {
@@ -63,7 +92,32 @@
     background-color: rgba(0, 0, 0, 0.1);
     
 }
+.navbar-nav {
+text-align: left;
+}
 
+.navbar-btn {
+    float: right;
+}
+
+.navbar-btn-collaps {
+    float: left;
+    color: #ffffff;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-btn-collaps:focus,
+.navbar-btn-collaps:active:focus {
+    float: left;
+    color: #ffffff;
+    background-color: transparent;
+    border-color: transparent;
+    outline: none;
+}
+.nav-icon-bar {
+    float: right;
+}
 .navbar-toggle .icon-bar {
     display: block;
     width: 6px;
@@ -121,6 +175,7 @@
     transition-duration: .4s;
 }
 
+
 /*--------------------------------------------------Butons--*/
 
 button {
@@ -151,3 +206,42 @@ button-close,
 
 
 /*--------------------------------------------------Footer--*/
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    min-height: 20px;
+    z-index: 1; 
+}
+
+.footer-bg-color {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.social-links {
+    padding-bottom: 0;
+    margin-bottom: 15px;
+}
+
+.social-links>li>a {
+    font-size: 18px;
+    color: #ffffff;
+
+}
+.social-xs {
+    text-align: right;
+    float: right;
+}
+
+.social-icons {
+    padding: 5;
+    vertical-align: top;
+    line-height: 50px;
+}
+.social-meets>li,i {
+    font-size: 16px;
+    color: #ffffff;
+    list-style-type: none;
+}

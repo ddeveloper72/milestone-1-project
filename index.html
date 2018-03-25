@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,46 +11,53 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Irish Drone Club</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-default">
-            <!--<div class="row">
-                <div class="col-xs-12">-->
-                    <div class="container-fluid">
-                        <div class="navbar-header"> 
-                        <a href="#" class="navbar-brand">Home</a>
+            <div class="container-fluid">
+                    <div class="col-xs-3 col-md-4 navbar-header nav-icon-bar">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                        </div>
-                        <div class="collapse navbar-collapse" id="navbar">
+                    </div>
+                    <div class="col-xs-4 col-md-4 collapse navbar-collapse" id="navbar">
                             <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Home</a></li>
                                 <li><a href="#">Videos</a></li>
                                 <li><a href="#">Photography</a></li>
-                                <li class="visible-xs"><a href="#">Sign In</a></li>
-                            </ul>
-                            <div class="navbar-header navbar-right hidden-xs">
-                                <a href="#" class="btn btn-default navbar-btn">Sign In</a>
-                            </div>    
-                        </div>
-                     </div>
-                 <!--</div>
-           </div>-->
+                                <li><p><button class="btn btn-default navbar-btn-collaps hidden-md hidden-lg" data-toggle="modal" data-target="#logInModal">Sign In</button></p></li>
+                            </ul>                           
+                            <div class="col-xs-2 navbar-header navbar-right hidden-xs">
+                                    <p><button class="btn btn-default navbar-btn  hidden-xs" data-toggle="modal" data-target="#logInModal">Sign In</button></p>
+                            </div>                            
+                    </div> 
+                    <div class="col-xs-5 social-xs hidden-sm hidden-md hidden-lg">                   
+                            <url class="list-inline social-links social-icons">
+                                <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
+                            </url>                    
+                    </div>
+                            
+                    
+                                                                             
+            </div>
         </nav>
-         <div class="container-fluid callout-container">
+        <div class="container-fluid callout-container">
             <div class="class opaque-overlay">&nbsp;</div>
             <div class="row">
-                    <div class="col-xs-12">
-                        <section class="callout jumbotron text-center">
-                            <h1 class="jumbotron-header">Irish Drone Club</h1>
-                            <hr class="block-divider block-divider--long">
-                            <p class="jumbotron-paragraph">Sign Up To Join The Club</p>
-                            <p><button class="btn btn-lg btn--cta" data-toggle="modal" data-target="#signUpModal">Sign Up!</button></p>
-                        </section>
-                    </div>
+                <div class="col-xs-12">
+                    <section class="callout jumbotron text-center">
+                        <h1 class="jumbotron-header">Irish Drone Club</h1>
+                        <hr class="block-divider block-divider--long">
+                        <p class="jumbotron-paragraph">Sign Up To Join The Club</p>
+                        <p><button class="btn btn-lg btn--cta" data-toggle="modal" data-target="#signUpModal">Sign Up!</button></p>
+                    </section>
+                </div>
             </div>
         </div>
     </header>
@@ -57,43 +65,88 @@
         <article></article>
         <asside></asside>
     </section>
-    <footer></footer>
-    
-        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button button-close" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Membership Sign Up!</h4>
-              </div>
-              <div class="modal-body">
-                <form>
-                      <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Email">
-                            <p class="help-block">We'll never share your email address with anyone</p>
-                      </div>
-                      <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Password">
-                      </div>
-                      <div class="form-group">
-                            <label for="passwordRepeat">Repeat Password</label>
-                            <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat Your Password">
-                      </div>
-                             <button type="submit" class="btn btn--cta btn--whiskeyYellow">Sign Up!</button>
-                </form>
-              </div>
-              </div>
-          </div>
+    <footer>
+        <div class="container-fluid footer-bg-color">
+            <div class="row">
+                <div class="col-xs-10"<h5 class="sub-heading">Meetups</h5>
+                    <ul class="social-meets">
+                            <li><p><i class="fa fa-leaf">&nbsp;&nbsp;</i>Date Time & location here</p></li>
+                            <li><p><i class="fa fa-tree">&nbsp;&nbsp;</i>Date Time & location here</p></li>
+                            <li><p><i class="fa fa-coffee">&nbsp;&nbsp;</i>Date Time & location here</p></li>
+                    </ul>
+                </div>
+                <div class="col-xs-2 hidden-xs hidden-sm-down"><h5 class="sub-heading">Social Links</h5>                    
+                    <url class="list-inline social-links social-icons">
+                        <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
+                    </url>                    
+                </div>
+            </div>
         </div>
+    </footer>
+    <modal>
+        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button button-close" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Membership Sign Up!</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                                <p class="help-block">We'll never share your email address with anyone</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="passwordRepeat">Repeat Password</label>
+                                <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat Your Password">
+                            </div>
+                            <button type="submit" class="btn btn--cta">Sign Up!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button button-close" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Member Login</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                    <p class="help-block">To log in, please enter your email address.</p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn btn--cta">Sign In</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </modal>
     <!-- /.Modal -->
-        
-        <!-- Latest compiled and minified JQuery -->
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <!-- /.Latest compiled and minified JQuery -->
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <!-- /. Latest compiled and minified JavaScript -->
+    <!-- Latest compiled and minified JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- /.Latest compiled and minified JQuery -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- /. Latest compiled and minified JavaScript -->
 </body>
+
 </html>
