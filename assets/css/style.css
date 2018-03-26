@@ -188,6 +188,22 @@ text-align: left;
     transition-duration: .4s;
 }
 
+/*--------------------------------------------------Video Section--*/
+
+.video-features {
+   background-color: #fcf8e3d1;
+   margin: 5px;
+   margin: 10;
+   
+}
+
+.video-description {
+    background-color: #fcf8e3d1;
+    margin: 5px;
+    margin: 10;
+}
+
+
 
 /*--------------------------------------------------Butons--*/
 
