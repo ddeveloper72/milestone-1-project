@@ -11,42 +11,39 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Irish Drone Club</title>
 </head>
-
 <body>
-    <header>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                    <div class="col-xs-3 col-md-4 navbar-header nav-icon-bar">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                    </div>
-                    <div class="col-xs-4 col-md-4 collapse navbar-collapse" id="navbar">
-                            <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#">Videos</a></li>
-                                <li><a href="#">Photography</a></li>
-                                <li><p><button class="btn btn-default navbar-btn-collaps hidden-md hidden-lg" data-toggle="modal" data-target="#logInModal">Sign In</button></p></li>
-                            </ul>                           
-                            <div class="col-xs-2 navbar-header navbar-right hidden-xs">
-                                    <p><button class="btn btn-default navbar-btn  hidden-xs" data-toggle="modal" data-target="#logInModal">Sign In</button></p>
-                            </div>                            
-                    </div> 
-                    <div class="col-xs-5 social-xs hidden-sm hidden-md hidden-lg">                   
-                            <url class="list-inline social-links social-icons">
-                                <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
-                            </url>                    
-                    </div>
-                            
-                    
-                                                                             
+    <header class="container-fluid">
+        <nav class="navbar navbar-default navbar-home">            
+            <div class="col-xs-3 col-md-4 navbar-header nav-icon-bar">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+            </div>
+            <div class="col-xs-4 col-md-4 collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="#">Photography</a></li>
+                        <li><a href="#">Meet-ups</a></li>
+                        <li><p><button class="btn btn-default navbar-btn-collaps hidden-md hidden-lg" data-toggle="modal" data-target="#logInModal">Sign In</button></p></li>
+                    </ul>                           
+                    <div class="col-xs-2 navbar-header navbar-right hidden-xs">
+                            <p><button class="btn btn-default navbar-btn  hidden-xs" data-toggle="modal" data-target="#logInModal">Sign In</button></p>
+                    </div>                            
+            </div> 
+            <div class="col-xs-5 social-xs hidden-sm hidden-md hidden-lg">                   
+                    <url class="list-inline social-links social-icons">
+                        <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
+                    </url>                    
             </div>
         </nav>
+    </header>
+    <section>
         <div class="container-fluid callout-container">
             <div class="class opaque-overlay">&nbsp;</div>
             <div class="row">
@@ -60,11 +57,7 @@
                 </div>
             </div>
         </div>
-    </header>
-    <section>
-        <article></article>
-        <asside></asside>
-    </section>
+    </section><!-- Hero Image & Jumbotron -->
     <footer>
         <div class="container-fluid footer-bg-color">
             <div class="row">
@@ -84,38 +77,42 @@
                 </div>
             </div>
         </div>
-    </footer>
-    <modal>
-        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button button-close" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Membership Sign Up!</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="email">Email address</label>
-                                <input type="email" class="form-control" id="email" placeholder="Email">
-                                <p class="help-block">We'll never share your email address with anyone</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password" placeholder="Password">
-                            </div>
-                            <div class="form-group">
-                                <label for="passwordRepeat">Repeat Password</label>
-                                <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat Your Password">
-                            </div>
-                            <button type="submit" class="btn btn--cta">Sign Up!</button>
-                        </form>
+    </footer><!-- Meet-ups Highlights -->
+    <sign-up>
+        <modal>
+            <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button button-close" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Membership Sign Up!</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                    <p class="help-block">We'll never share your email address with anyone</p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="passwordRepeat">Repeat Password</label>
+                                    <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat Your Password">
+                                </div>
+                                <button type="submit" class="btn btn--cta">Sign Up!</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        </modal>
+    </sign-up><!-- /.Sign Up Modal -->
+    <sign-in>
+        <modal>
+            <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -139,8 +136,9 @@
                     </div>
                 </div>
             </div>
-    </modal>
-    <!-- /.Modal -->
+        </modal>
+    </sign-in><!-- /.Sign In Modal -->    
+    
     <!-- Latest compiled and minified JQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!-- /.Latest compiled and minified JQuery -->
@@ -148,5 +146,4 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- /. Latest compiled and minified JavaScript -->
 </body>
-
 </html>

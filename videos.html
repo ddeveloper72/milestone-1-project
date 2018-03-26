@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <title>Irish Drone Club</title>
+</head>
+<body>
+        <header class="container-fluid navbar-pages">
+            <nav class="navbar navbar-default navbar-pages">            
+                <div class="col-xs-3 col-md-4 navbar-header nav-icon-bar">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                </div>
+                <div class="col-xs-4 col-md-4 collapse navbar-collapse" id="navbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="#">Photography</a></li>
+                            <li><a href="#">Meet-ups</a></li>
+                            <li><p><button class="btn btn-default navbar-btn-collaps hidden-md hidden-lg" data-toggle="modal" data-target="#logInModal">Sign In</button></p></li>
+                        </ul>                           
+                        <div class="col-xs-2 navbar-header navbar-right hidden-xs">
+                                <p><button class="btn btn-default navbar-btn  hidden-xs" data-toggle="modal" data-target="#logInModal">Sign In</button></p>
+                        </div>                            
+                </div> 
+                <div class="col-xs-5 social-xs hidden-sm hidden-md hidden-lg">                   
+                        <url class="list-inline social-links social-icons">
+                            <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
+                        </url>                    
+                </div>
+            </nav>
+        </header>
+    <Section class="container-fluid">
+        <div class="row row-table">
+            <div class="col-xs-12 col-sm-12 col-md-8 feature-video">
+                <div class="row">
+                    <div class="col-md-4"><h3>Feature Video</h3>
+                    </div>
+                    
+                </div>
+                <div class="fa-youtube-square"></div>
+            </div>
+        
+        
+            <div class="ol-xs-12 col-sm-12 col-md-4 user-comments">
+                <div class="row row-table">
+                    <div class="col-md-4 user-comments">
+                        <div class="row">
+                            <div class="col-md-8"><h3>User Collection</h3>
+                            </div>
+                        </div>                            
+                    </div>                        
+                </div>
+            </div>
+        </div>           
+    </Section>   
+    <footer>
+            <div class="container-fluid footer-bg-color">
+                <div class="row">
+                    <div class="col-xs-10"<h5 class="sub-heading">Meetups</h5>
+                        <ul class="social-meets">
+                                <li><p><i class="fa fa-leaf">&nbsp;&nbsp;</i>Date Time & location here</p></li>
+                                <li><p><i class="fa fa-tree">&nbsp;&nbsp;</i>Date Time & location here</p></li>
+                                <li><p><i class="fa fa-coffee">&nbsp;&nbsp;</i>Date Time & location here</p></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-2 hidden-xs hidden-sm-down"><h5 class="sub-heading">Social Links</h5>                    
+                        <url class="list-inline social-links social-icons">
+                            <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
+                        </url>                    
+                    </div>
+                </div>
+            </div>
+        </footer><!-- Meet-ups Highlights -->
+        <sign-up>
+            <modal>
+                <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button button-close" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Membership Sign Up!</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="email">Email address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Email">
+                                        <p class="help-block">We'll never share your email address with anyone</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="passwordRepeat">Repeat Password</label>
+                                        <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat Your Password">
+                                    </div>
+                                    <button type="submit" class="btn btn--cta">Sign Up!</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </modal>
+        </sign-up><!-- /.Sign Up Modal -->
+        <sign-in>
+            <modal>
+                <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button button-close" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Member Login</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="email">Email address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Email">
+                                        <p class="help-block">To log in, please enter your email address.</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Password">
+                                    </div>
+                                    <button type="submit" class="btn btn--cta">Sign In</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </modal>
+        </sign-in><!-- /.Sign In Modal -->    
+        
+        <!-- Latest compiled and minified JQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!-- /.Latest compiled and minified JQuery -->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- /. Latest compiled and minified JavaScript -->
+    </body>
+    </html>

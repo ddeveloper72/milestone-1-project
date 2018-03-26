@@ -81,7 +81,7 @@ color: #ffffff
 }
 
 /*--------------------------------------------------Nav Bar--*/
-.navbar {
+.navbar-home {
     position: absolute;
     margin-bottom: 0;
     top: 0;
@@ -90,6 +90,19 @@ color: #ffffff
     width: 100%;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.1);
+    
+}
+
+.navbar-pages {
+    margin-bottom: 0;
+    top: 0;
+    left: 0;
+    border: 0;
+    border-radius: 0;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+    background-color: #ff000029;
     
 }
 .navbar-nav {
