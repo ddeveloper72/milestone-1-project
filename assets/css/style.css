@@ -1,6 +1,56 @@
 
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
+/*--------------------------------------------------Header & Footer--*/
+
+ .fixed-header {
+        top: 0;
+}
+
+.navbar-home {
+    position: fixed;
+    height: 50px;
+    margin-bottom: 0;
+    padding:10px 0;
+    left: 0;
+    width: 100%;
+    color: #fff; 
+    text-align: center;
+    background-color: #333;
+    z-index: 1;
+    
+}
+
+.fixed-footer {
+        bottom: 0;
+        
+}
+
+body {        
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+.container {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0 auto;
+    background:transparent;
+}
+
+
+
+
+
+
+
+
+
+
 /*--------------------------------------------------Hero Image--*/
 
 .callout-container {
@@ -14,6 +64,7 @@
     align-items: center;
     position: relative;
     justify-content: center;
+    
 }
 
 .jumbotron {
@@ -22,9 +73,11 @@
     margin-bottom: 30px;
     color: inherit;
     background-color: transparent;
+    z-index: 1;
 }
 
-/*--------------------------------------------------Font Colours--*/
+
+/*--------------------------------------------------Jumbo Colours--*/
 .jumbotron .h1, .jumbotron h1 {
     color: #ffffff;
 }
@@ -34,22 +87,50 @@
 }
 
 /*--------------------------------------------------Font Styles--*/
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: "Ubuntu+Condensed", sans-serif;
+    line-height: 1.1;
+}
+
+body {        
+    font-family: "Ubuntu+Condensed", sans-serif;
+    color: #000;
+    background-color: transparent;
+}
+
+.page-heading {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    height: 60px;
+    margin-top: 60px;
+}
+
+
+.a {
+    font-family: "Ubuntu+Condensed", sans-serif;
+}
+
+nav {
+        
+    display: inline-block;
+}
 
 .navbar-nav a {
-    font-family: "Ubuntu+Condensed", sans-serif;
     font-size: 18px;
     font-weight: 600;
 }
 
 
 .navbar-nav li>a {
-    font-family: "Ubuntu+Condensed", sans-serif;
     font-size: 16px;
     font-weight: 600;
 }
 
 .navbar-btn-collaps {
-    font-family: "Ubuntu+Condensed", sans-serif;
     font-size: 16px;
     font-weight: 600;
 }
@@ -58,40 +139,43 @@
     text-transform: uppercase;
 }
 
+.main-heading {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+}
+
 .sub-heading {
-    font-family: "Ubuntu+Condensed", sans-serif;
     font-size: 20px;
+    font-weight: 400;
+    color: #333;
+}
+
+.sub-heading-footer {
+    font-size: 18px;
+    font-weight: 500
+}
+
+.plain-text>li>p {
+    font-size: 14px;
     font-weight: 300;
+    color: #333;
 }
 
 .plain-text {
-    font-family: "Ubuntu+Condensed", sans-serif;
-    font-size: 16px;
-    font-weight: 100;
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
 }
 
-.footer,
-.sub-heading {
-color: #ffffff
-}
-
-.footer,
-.plain-text {
-color: #ffffff
+.wrapper--1 {
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px;
 }
 
 /*--------------------------------------------------Nav Bar--*/
-.navbar-home {
-    position: absolute;
-    margin-bottom: 0;
-    top: 0;
-    left: 0;
-    border: 0;
-    width: 100%;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.1);
-    
-}
+
 
 .navbar-pages {
     margin-bottom: 0;
@@ -128,13 +212,30 @@ text-align: left;
     border-color: transparent;
     outline: none;
 }
-.nav-icon-bar {
-    float: right;
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #26226f;
 }
-.navbar-toggle .icon-bar {
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 0px 10px;
+    margin-top: 0px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+
+.nav-icon-bar {
     display: block;
     width: 6px;
     height: 6px;
+    padding: 0;
+    margin: 0;
     border-radius: 3px;
     background-color: #ffffff;
 }
@@ -186,24 +287,56 @@ text-align: left;
 .navbar-default .navbar-toggle {
     border-color: transparent;
     transition-duration: .4s;
+    margin-right: 5px;
 }
 
 /*--------------------------------------------------Video Section--*/
 
 .video-features {
-   background-color: #fcf8e3d1;
-   margin: 5px;
-   margin: 10;
-   
+    display: block;
+    background-color: #eac70fba;
+    margin: 18px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding-top: 10px;
+    padding: 10px;
+    margin-left: 10px;
+    height: auto;
 }
 
 .video-description {
-    background-color: #fcf8e3d1;
-    margin: 5px;
-    margin: 10;
+    display: block;
+    background-color: #eac70fba;
+    margin: 18px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-right: 15px;
+    height: auto;
 }
 
+/*--------------------------------------------------Image-Gallery--*/
 
+.thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    margin-top:20px;
+    line-height: 1.42857143;
+    text-align: center;
+    background-color: #eac70fba;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+.image-tiles {
+    margin-left: 15px;
+    margin-right: 15px;
+}
 
 /*--------------------------------------------------Butons--*/
 
@@ -212,7 +345,7 @@ button {
     text-align: center;
     cursor: default;
     color: buttontext;
-    background-color: rgba(3, 241, 29, 0.73);
+    background-color: #eac70fba;
     box-sizing: border-box;
     padding: 2px 6px 3px;
     border-width: 2px;
@@ -230,25 +363,15 @@ button-close,
 .close:hover {
     color:#ff0000;
 }
+
+
 /*--------------------------------------------------Hover--*/
 
 
 
 /*--------------------------------------------------Footer--*/
-footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
-    min-height: 20px;
-    z-index: 1; 
-}
 
-.footer-bg-color {
-    background-color: rgba(0, 0, 0, 0.1);
-}
+
 .social-links {
     padding-bottom: 0;
     margin-bottom: 15px;
@@ -261,16 +384,47 @@ footer {
 }
 .social-xs {
     text-align: right;
-    float: right;
+    margin-top: 0;
 }
 
 .social-icons {
-    padding: 5;
-    vertical-align: top;
-    line-height: 50px;
+    vertical-align: bottom;
+    line-height: 0px;
+    margin-top: 19px;
+    margin-right: 0;
 }
 .social-meets>li,i {
     font-size: 16px;
     color: #ffffff;
     list-style-type: none;
+}
+
+.social-icons-footer {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border: 0;
+    float: right;
+    bottom: 0px;
+}
+/*--------------------------------------------------Media-Queries--*/
+/*  Auto-resizable-iframe code was sourced from  */ 
+/* https://stackoverflow.com/users/432801/darwin */
+.auto-resizable-iframe {
+  max-width: 420px;
+  margin: 0px auto;
+}
+
+.auto-resizable-iframe > div {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0px;
+}
+
+.auto-resizable-iframe iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
 }
