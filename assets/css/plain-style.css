@@ -12,6 +12,10 @@ body {
     line-height: 1;
 }
 
+.pagetitle {
+    font-weight: 400;
+}
+
 .navbar-light .navbar-brand {
     color: #ffffff;
     font-weight: 400;
@@ -44,16 +48,15 @@ a:hover {
 .vidcard-header>h3 {
     color: #000;
     font-weight: 300;
-    text-align: center;
 }
 
-.vidcard-header>h3>a {
+.vidcard-header>a {
     color: #000;
     font-weight: 300;
     text-decoration: none;
 }
 
-.vidcard-header>h3>a:hover {
+.vidcard-header>a:hover {
     color: #000;
     font-weight: 300;
     line-height: 1.1;
@@ -170,6 +173,10 @@ a:hover {
     background-color: #eac70fba;
     
 }
+
+/*--------------------------------------------------Calandar--*/
+
+
 /*--------------------------------------------------Buttons--*/
 
 button {
@@ -218,17 +225,28 @@ button-close,
   height: 100%;
 }
 
-@media only screen and (max-width: 375px) {
-    .card-hidden {
-        display: none;
-    }
+
+/* Responsive iFrame for google calandar sourced from https://profromgo.com/blog/google-calendar-responsive/ */
+
+.responsive-iframe-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
 }
 
-@media only screen and (max-width: 414px) {
-.footer-bar {
-        background-color: #000000c9;
-    }
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
 }
+
+
 
 @media only screen and (max-width: 414px) {
 iframe {
@@ -238,8 +256,9 @@ iframe {
     }
 }
 
+
 @media only screen and (min-width: 415px) {
-vidcard-header {
+.vidcard-header {
     display: block;
     margin-left: auto;
     margin-right: auto;

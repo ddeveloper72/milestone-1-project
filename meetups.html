@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/plain-style.css" type="text/css" />
@@ -13,70 +13,124 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-default fixed-header navbar-home">
-            <div class="col-xs-1 col-xs-offset-11 navbar-header nav-icon-bar">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-            </div>
-            <div class="col-md-1 collapse navbar-collapse" id="navbar">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="videos.html">Videos Gallery</a></li>
-                    <li><a href="stills.html">Gallery</a></li>
-                    <li><a href="#">Login</a></li>
+    <div class="container-fluid callout-bg">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Irish Drones</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="nav">
+                    <li class="nav-items">
+                        <a class="nav-link" href="videos.html">Videos</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link" href="stills.html">Gallery</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
                 </ul>
             </div>
         </nav>
-    </header>
-    <section>
-        <div class="container-fluid">
-            <h1 class="page-heading">Favorite Flying Spot</h1>
-            <div class="container-fluid callout-container">
-                <div class="class opaque-overlay">&nbsp;
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pagetitle">
+                        <h1 class="text-center">MeetUps!</h1>
+                    </div>
                 </div>
-                
-<!-- Insert new code here -->
-                
+            </div>
+        </div
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="googlemap">
+                        <div class="responsive-iframe-container">
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1RJ3CWytdRMIRtVbOh81DaBtM-Q66rzKZ" width="640" height="480"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="discussionpoints">
+                        <div class="card">
+                            <h3 class="text-center">Discussion Points</h3>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, qui.</ipsen10>
+                                </li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus esse dicta nam facilis recusandae alias!</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="googleclander">
+                            </div>
+                            <div class="card">
+                                <h3 class="text-center">Google Calandar</h3>
+                                <div class="d-none d-md-block">
+                                    <div class="responsive-iframe-container">
+                                        <iframe src="https://calendar.google.com/calendar/embed?title=MeetUps!&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=lqgfk9goer9va8hptt5asljl54%40group.calendar.google.com&amp;color=%23875509&amp;ctz=Europe%2FDublin" style="border-width:0" width="400"
+                                            height="400" frameborder="0" scrolling="no">
+                                        </iframe>
+                                    </div>
+                                </div>
+                                <div class="d-sm-block d-md-none">
+                                    <div class="responsive-iframe-container">
+                                        <iframe src="https://calendar.google.com/calendar/embed?title=MeetUps!&amp;mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=lqgfk9goer9va8hptt5asljl54%40group.calendar.google.com&amp;color=%23875509&amp;ctz=Europe%2FDublin" style="border-width:0"
+                                            width="320" height="400" frameborder="0" scrolling="no">
+                                </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </section>
+    </div>
+    </div>
+    </div>
+    </div>
+
     <footer class="footer-bar">
-            <div class="row">
-                <div class="col-sm-6 hidden-xs">
-                    <h3 class="heading-footer">Meetups</h3>
-                    <ul>
-                        <li class="text-footer">
-                            <p><i class="plain-text fa fa-leaf">&nbsp;&nbsp;</i>Date Time & location here</p>
-                        </li>
-                        <li class="text-footer">
-                            <p><i class="plain-text fa fa-tree">&nbsp;&nbsp;</i>Date Time & location here</p>
-                        </li>
-                        <li class="text-footer">
-                            <p><i class="plain-text fa fa-coffee">&nbsp;&nbsp;</i>Date Time & location here</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-4 offset-2">
-                    <ul class="list-inline socialicons">
-                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
+        <div class="row">
+            <div class="col-sm-6 hidden-xs">
+                <h3 class="heading-footer">Meetups</h3>
+                <ul>
+                    <li class="text-footer">
+                        <p><i class="plain-text fa fa-leaf">&nbsp;&nbsp;</i>Date Time & location here</p>
+                    </li>
+                    <li class="text-footer">
+                        <p><i class="plain-text fa fa-tree">&nbsp;&nbsp;</i>Date Time & location here</p>
+                    </li>
+                    <li class="text-footer">
+                        <p><i class="plain-text fa fa-coffee">&nbsp;&nbsp;</i>Date Time & location here</p>
+                    </li>
+                </ul>
             </div>
-        </footer>
+            <div class="col-sm-4 offset-2">
+                <ul class="list-inline socialicons">
+                    <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <modal>
-        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel1">Membership Sign Up!</h4>
                         <button type="button button-close" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Membership Sign Up!</h4>
                     </div>
                     <div class="modal-body">
                         <form>
@@ -102,12 +156,12 @@
     </modal>
     <!-- /.Sign Up Modal -->
     <modal>
-        <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button button-close" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Member Login</h4>
+                        <h4 class="modal-title" id="myModalLabel2">Member Login</h4>
                     </div>
                     <div class="modal-body">
                         <form>
@@ -128,7 +182,14 @@
         </div>
     </modal>
     <!-- /.Sign In Modal -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXZnNo1jX7V4KYEjBEcCVR73OgG-lSzIM&callback=myMap"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
