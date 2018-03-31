@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <title>Irish Drone Club</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,12 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/plain-style.css" type="text/css" />
-    <title>Irish Drone Club</title>
 </head>
-
 <body>
-    <!-- header start -->
    <div class="container-fluid callout-bg">
+       <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="index.html">Irish Drones</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,8 +33,32 @@
                 </ul>
             </div>
         </nav>
-                <!-- header end -->
-        <!-- section start -->
+        <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel2">Member Login</h4>
+                        <button type="button button-close" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="SignInEmail" placeholder="Email">
+                                <p class="help-block">To log in, please enter your email address.</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="SignInPassword" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn--cta">Sign In</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </header>
+        <section>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -49,94 +72,65 @@
             <div class="row">
                 <div class="col-sm-4 col-md-4 mb-3">
                     <div class="card image-card">
-                        <img class="card image-card" id="myImg" src="assets/images/hero-01.jpg" alt="Ring of the Rath, Co Carlow" class="responsive">
+                        <img class="myImg responsive" width="100%" src="assets/images/hero-01.jpg" alt="Ring of the Rath, Co Carlow">
                             <div class="card-body card-hidden">
                              <p>Ring of the Rath, Co Carlow</p>
-                            </div>
-                    </div>
-                    <div id="myModal" class="img-modal">
-                        <span class="close">&times;</span>
-                        <img class="modal-content" id="img01">
-                        <div id="caption"></div>
+                            </div>                            
                     </div>
                 </div>
                 <div class="col-sm-4 col-md-4 mb-3">
                         <div class="card image-card">
-                                <img class="card image-card" id="myImg" src="assets/images/drone-02.jpg" alt="View of the R. Barrow in flood, Carlow" class="responsive">
+                                <img class="myImg responsive" width="100%" src="assets/images/drone-02.jpg" alt="View of the R. Barrow in flood, Carlow">
                                     <div class="card-body card-hidden">
                                      <p>View of the R. Barrow in flood, Carlow</p>
                                     </div>
-                            </div>
-                            <div id="myModal" class="img-modal">
-                                <span class="close">&times;</span>
-                                <img class="modal-content" id="img01">
-                                <div id="caption"></div>
-                            </div>
                         </div>
-                            
-                    
+                </div>
                 <div class="col-sm-4 col-md-4 mb-3">
                     <div class="card image-card">
-                        <img class="card image-card" id="myImg" src="assets/images/drone-03.jpg" alt="Aghowle Church, Co Carlow" class="responsive">
+                        <img class="myImg responsive" width="100%" src="assets/images/drone-03.jpg" alt="Aghowle Church, Co Carlow">
                         <div class="card-body card-hidden">
                         <p>Aghowle Church, Co Carlow</p>
                         </div>
                     </div>
-                    <div id="myModal" class="img-modal">
-                        <img class="modal-content" id="img01">
-                        <span class="close">&times;</span>
-                        <div id="caption"></div>
-                    </div>
-                    
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4 col-md-4 mb-3">
                     <div class="card image-card">
-                        <img class="card image-card" id="myImg" src="assets/images/drone-01.jpg" alt="The skies of the future will likely host many drones. Image courtesy of Wikipedia user Don McCullough, CC BY 2.0" class="responsive">
+                        <img class="myImg responsive" width="100%" src="assets/images/drone-01.jpg" alt="The skies of the future will likely host many drones. Image courtesy of Wikipedia user Don McCullough, CC BY 2.0">
                         <div class="card-body card-hidden">
                         <p>The skies of the future will likely host many drones. Image courtesy of Wikipedia user Don McCullough, CC BY 2.0</p>
                         </div>
                     </div>
-                    <div id="myModal" class="img-modal">
-                        <span class="close">&times;</span>
-                        <img class="modal-content" id="img01">
-                        <div id="caption"></div>
-                    </div>
-                    
                 </div>
                 <div class="col-sm-4 col-md-4 mb-3">
                     <div class="card image-card">
-                        <img class="card image-card" id="myImg" src="assets/images/drone-04.jpg" alt="Drones flying overhead at Weston Airport in Lucan, published by Siliconrepublic" class="responsive">
+                        <img class="myImg responsive" width="100%" src="assets/images/drone-04.jpg" alt="Drones flying overhead at Weston Airport in Lucan, published by Siliconrepublic">
                         <div class="card-body card-hidden">
                         <p>Drones flying overhead at Weston Airport in Lucan, published by Siliconrepublic</p>
                         </div>
                     </div>
-                    <div id="myModal" class="img-modal">
-                        <span class="close">&times;</span>
-                        <img class="modal-content" id="img01">
-                        <div id="caption"></div>
-                    </div>
                 </div>
                 <div class="col-sm-4 col-md-4 mb-3">
                     <div class="card image-card">
-                        <img class="card image-card" id="myImg" src="assets/images/drone-05.jpg" alt="Drones are now being used by the emergency services" class="responsive">
+                        <img class="myImg responsive" width="100%" src="assets/images/drone-05.jpg" alt="Drones are now being used by the emergency services">
                         <div class="card-body card-hidden">
                         <p>Drones are now being used by the emergency services</p>
-                        </div>
-                    </div>
-                    <div id="myModal" class="img-modal">
-                        <span class="close">&times;</span>
-                        <img class="modal-content" id="img01">
-                        <div id="caption"></div>
-                    </div>
+                        </div>                        
+                    </div>                      
                 </div>
-            </div>
+            </div>                        
         </div>
-    </div>
-        <!-- header end -->
-        <!-- footer start -->
-        <footer class="footer-bar">
+        <!-- The Modal -->
+        <div id="myModal" class="img-modal">
+            <span class="img-close" id="closeBtn">&times;</span>
+            <img class="modal-content" id="img01">
+        <div id="caption"></div>
+        </div>        
+    </section>        
+    </div> 
+    <footer class="footer-bar">
             <div class="row">
                 <div class="col-md-6  d-none d-sm-block">
                     <h3 class="heading-footer">Meetups</h3>
@@ -160,63 +154,38 @@
                     </ul>
                 </div>
             </div>
-        </footer>
+    </footer><script>
+    // Get the modal Code snipet edited from W3Schools by Nishant Kumar
+    // https://www.w3schools.com/code/tryit.asp?filename=FPWHQND85Y3S
+    var modal = document.getElementById('myModal');
     
-
-    <!-- footer end -->
-    <modal>
-            <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="myModalLabel2">Member Login</h4>
-                            <button type="button button-close" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label for="email">Email address</label>
-                                    <input type="email" class="form-control" id="SignInEmail" placeholder="Email">
-                                    <p class="help-block">To log in, please enter your email address.</p>
-                                </div>
-                                <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <input type="password" class="form-control" id="SignInPassword" placeholder="Password">
-                                </div>
-                                <button type="submit" class="btn btn--cta">Sign In</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </modal>
-    <!-- /.Member Login -->
-    <script>
-            // Get the modal sourced from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img
-            var modal = document.getElementById('myModal');
-            
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById('myImg');
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function(){
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
-            }
-            
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-            
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-                modal.style.display = "none";
-            }
-            </script>
-            
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var images = document.getElementsByClassName('myImg');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    
+    var imagesList = Array.from(images);
+    
+    
+    imagesList.forEach(function(elm, index){
+        elm.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+    });
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementById('closeBtn');
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
+     
+    </script>      
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
-
 </html>
