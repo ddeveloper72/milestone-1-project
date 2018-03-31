@@ -29,7 +29,7 @@
                         <a class="nav-link" href="meetups.html">Meet-ups</a>
                     </li>
                     <li class="nav-items">
-                        <a class="nav-link" href="#">Login</a>
+                        <a class="nav-link" data-toggle="modal" href="#logInModal">Login</a>
                     </li>
                 </ul>
             </div>
@@ -48,25 +48,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card image-card">
+                        <a target="_blank" href="assets/images/hero-01.jpg">
                         <img class="card-img-top" src="assets/images/hero-01.jpg" alt="Drone in flight" class="responsive">
                         <div class="card-body card-hidden">
+                        </a>
                             <p>Ring of the Rath, Co Carlow</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card image-card">
+                            <a target="_blank" href="assets/images/hero-02.jpg">
                         <img class="card-img-top" src="assets/images/drone-02.jpg" alt="Drone in flight" class="responsive">
                         <div class="card-body card-hidden">
+                        </a>
                             <p>View of the R. Barrow in flood, Carlow</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card image-card">
+                        <a target="_blank" href="assets/images/hero-03.jpg">
                         <img class="card-img-top" src="assets/images/drone-03.jpg" alt="Drone in flight" class="responsive">
                         <div class="card-body card-hidden">
+                        </a>
                             <p>Aghowle Church, Co Carlow</p>
                         </div>
                     </div>
@@ -74,25 +80,31 @@
             </div>
             <div class="row">
                 <div class="col-sm-4 col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card image-card">
+                        <a target="_blank" href="assets/images/drone-01.jpg">
                         <img class="card-img-top" src="assets/images/drone-01.jpg" alt="Drone in flight" class="responsive">
                         <div class="card-body card-hidden">
+                        </a>
                             <p>The skies of the future will likely host many drones. Image courtesy of Wikipedia user Don McCullough, CC BY 2.0</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card image-card">
+                            <a target="_blank" href="assets/images/drone-04.jpg">
                         <img class="card-img-top" src="assets/images/drone-04.jpg" alt="Drone in flight" class="responsive">
                         <div class="card-body card-hidden">
+                            </a>
                             <p>Drones flying overhead at Weston Airport in Lucan, published by Siliconrepublic</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card image-card">
+                            <a target="_blank" href="assets/images/drone-05.jpg">
                         <img class="card-img-top" src="assets/images/drone-05.jpg" alt="Drone in flight" class="responsive">
                         <div class="card-body card-hidden">
+                        </a>
                             <p>Dronnes are now being used by the emergency services</p>
                         </div>
                     </div>
@@ -104,7 +116,7 @@
         <!-- footer start -->
         <footer class="footer-bar">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6  d-none d-sm-block">
                     <h3 class="heading-footer">Meetups</h3>
                     <ul>
                         <li class="text-footer">
@@ -131,62 +143,31 @@
 
     <!-- footer end -->
     <modal>
-        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button button-close" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Membership Sign Up!</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="email">Email address</label>
-                                <input type="email" class="form-control" id="email" placeholder="Email">
-                                <p class="help-block">We'll never share your email address with anyone</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password" placeholder="Password">
-                            </div>
-                            <div class="form-group">
-                                <label for="passwordRepeat">Repeat Password</label>
-                                <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat Your Password">
-                            </div>
-                            <button type="submit" class="btn btn--cta">Sign Up!</button>
-                        </form>
+            <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel2">Member Login</h4>
+                            <button type="button button-close" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <input type="email" class="form-control" id="SignInEmail" placeholder="Email">
+                                    <p class="help-block">To log in, please enter your email address.</p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" id="SignInPassword" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn btn--cta">Sign In</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </modal>
-    <!-- /.Membership Sign Up! -->
-    <modal>
-        <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button button-close" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Member Login</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="email">Email address</label>
-                                <input type="email" class="form-control" id="SignInEmail" placeholder="Email">
-                                <p class="help-block">To log in, please enter your email address.</p>
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Password</label>
-                                <input type="password" class="form-control" id="SignInPassword" placeholder="Password">
-                            </div>
-                            <button type="submit" class="btn btn--cta">Sign In</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </modal>
+        </modal>
     <!-- /.Member Login -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

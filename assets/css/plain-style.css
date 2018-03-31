@@ -36,13 +36,12 @@ a:hover {
     font-weight: 500;
 }
 
-.jumbotron .p, .jumbotron p {
-    color: #08ef11;
+.jumbotron .h1, .jumbotron h1 {
+    color: #ffffff;
 }
 
-.jumbotron .h1 .jumbotron h1 {
-    color: #08ef11;
-    font-weight: 300;
+.jumbotron .p, .jumbotron p {
+    color: #ffffff;
 }
 
 .vidcard-header>h3 {
@@ -114,15 +113,15 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    margin: 0;
+    margin-bottom: 15px;
     vertical-align: baseline;
  }
 
-.socialicons {
+ .socialicons {
     float: right;
-    position: absolute;
-    top: 64%;
-    left: 50%;
+    position: relative;
+    top: 20px;
+    left: -10px;
 }
 
 .heading-footer {
@@ -165,13 +164,65 @@ a:hover {
     padding: 1.25rem;
 }
 
-.card {
+.image-card {
     flex: auto;
     max-width: 420px;
     padding: 5px;
     margin-top: 10px;
-    background-color: #eac70fba;
+    background-color: #e6ea0f73;
     
+}
+
+@media only screen and (max-width: 414px) {
+    .image-card {
+        flex: auto;
+        max-width: 410px;
+        border-top-left-radius: 20px;
+        padding: 5px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        background-color: #e6ea0f73;
+        }
+    }
+.discuss-card {
+    flex: auto;
+    max-width: 420px;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #0f75ea93;
+    
+}
+
+@media only screen and (max-width: 414px) {
+    .discuss-card {
+        flex: auto;
+        max-width: 410px;
+        border-top-left-radius: 20px;
+        padding: 5px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        background-color: #0f75ea93;
+        }
+    }
+
+.cal-card {
+    flex: auto;
+    max-width: 420px;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #ea0f0fc2;
+    
+}
+@media only screen and (max-width: 414px) {
+.cal-card {
+    flex: auto;
+    max-width: 410px;
+    border-top-left-radius: 20px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    background-color: #ea0f0fc2;
+    }
 }
 
 /*--------------------------------------------------Calandar--*/
@@ -234,6 +285,7 @@ padding-bottom: 56.25%;
 padding-top: 30px;
 height: 0;
 overflow: hidden;
+border-radius: 8px;
 }
 
 .responsive-iframe-container iframe,
