@@ -15,17 +15,18 @@
 </head>
 
 <body>
-    <div class="container-fluid callout-bg">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid callout-bg-lg">
+        <header class="sticky">
+            <nav class="navbar navbar-light navbar-expand-lg">
                 <a class="navbar-brand" href="index.html">Irish Drones</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="nav">
-                        <a class="nav-link" href="stills.html">Gallery</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-items">
+                            <a class="nav-link" href="stills.html">Gallery</a>
                         </li>
                         <li class="nav-items">
                             <a class="nav-link" href="meetups.html">Meet-ups</a>
@@ -65,15 +66,9 @@
         </header>
         <section>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="pagetitle">
-                            <h1 class="text-center">Video</h1>
-                        </div>
-                    </div>
+                <div class="pagetitle">
+                    <h1 class="text-center">Video</h1>
                 </div>
-            </div>
-            <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="auto-resizable-iframe">
@@ -102,47 +97,47 @@
                 </div>
             </div>
         </section>
-    </div>
-    <footer class="footer-bar">
-        <div class="row">
-            <div class="col-sm-6 d-none d-sm-block">
-                <h3 class="heading-footer">Meetups</h3>
-                <ul>
-                    <li class="text-footer">
-                        <p>
-                            <i class="plain-text fa fa-leaf">&nbsp;&nbsp;</i>Date Time & location here</p>
-                    </li>
-                    <li class="text-footer">
-                        <p>
-                            <i class="plain-text fa fa-tree">&nbsp;&nbsp;</i>Date Time & location here</p>
-                    </li>
-                    <li class="text-footer">
-                        <p>
-                            <i class="plain-text fa fa-coffee">&nbsp;&nbsp;</i>Date Time & location here</p>
-                    </li>
-                </ul>
+        <footer id="footer">
+            <div class="col-sm-4 d-none d-sm-block">
+                <nav class="navbar navbar-dark navbar-expand-lg">
+                    <a class="meetup-title" href="meetups.html">Meetups</a>
+                    <ul class="navbar-nav">
+                        <li class="nav-items">
+                            <a class="nav-link nav-link-footer" href="#">
+                                <i class="plain-text fa fa-leaf">&nbsp;&nbsp;</i>Event 1</a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="nav-link nav-link-footer" href="#">
+                                <i class="plain-text fa fa-tree">&nbsp;&nbsp;</i>Event 2</a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="nav-link nav-link-footer" href="#">
+                                <i class="plain-text fa fa-coffee">&nbsp;&nbsp;</i>Event 3</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div class="col-sm-4 offset-2">
-                <ul class="list-inline socialicons">
-                    <li class="list-inline-item">
-                        <a href="#" target="_blank">
+            <div class="col-sm-12">
+                <ul class="list-inline">
+                    <li class="nav-items">
+                        <a class="nav-link socialicons" href="#" target="_blank">
                             <i class="fa fa-instagram" aria-hidden="true"></i>
                         </a>
                     </li>
-                    <li class="list-inline-item">
-                        <a href="#" target="_blank">
+                    <li class="nav-items">
+                        <a class="nav-link socialicons" href="#" target="_blank">
                             <i class="fa fa-youtube" aria-hidden="true"></i>
                         </a>
                     </li>
-                    <li class="list-inline-item">
-                        <a href="#" target="_blank">
+                    <li class="nav-items">
+                        <a class="nav-link socialicons" href="#" target="_blank">
                             <i class="fa fa-flickr" aria-hidden="true"></i>
                         </a>
                     </li>
                 </ul>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"

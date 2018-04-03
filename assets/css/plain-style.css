@@ -1,7 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
 /*--------------------------------------------------Font Styles--*/
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Ubuntu+Condensed", sans-serif;
     line-height: 1;
 }
@@ -10,20 +22,15 @@ body {
     margin: 0;
     font-family: "Ubuntu+Condensed", sans-serif;
     line-height: 1;
+    margin-bottom: 60px;
 }
 
 .pagetitle {
     font-weight: 400;
+    margin-top: 50px;
+    padding: 15px;
 }
 
-.navbar-light .navbar-brand {
-    color: #ffffff;
-    font-weight: 400;
-}
-
-.navbar-light .navbar-brand:hover {
-    color: rgb(43, 34, 119);
-}
 
 a {
     color: #ffffff;
@@ -32,15 +39,21 @@ a {
 }
 
 a:hover {
-    color: #161061;
-    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);        
 }
 
-.jumbotron .h1, .jumbotron h1 {
+.jumbotron .h1,
+.jumbotron h1 {
     color: #ffffff;
 }
 
-.jumbotron .p, .jumbotron p {
+.jumbotron .p,
+.jumbotron p {
     color: #ffffff;
 }
 
@@ -61,10 +74,24 @@ a:hover {
     line-height: 1.1;
 }
 
+
 /*--------------------------------------------------Call-Out--*/
-.callout-bg {
+
+.callout-bg-lg {
     height: 100vh;
-    background: url("../images/hero-01.jpg");
+    background: url("../images/RingOfRath-Large.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    
+}
+
+.callout-bg-md {
+    /*height: 100vh;*/
+    background: url("../images/RingOfRath-Medium.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -79,82 +106,127 @@ a:hover {
     padding-bottom: 30px;
     margin-bottom: 30px;
     color: inherit;
-    background-color: transparent;
+    background-color: #0d1e2fad;
     z-index: 1;
 }
 
-.signupmodal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.signup-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
 /*--------------------------------------------------Nav Bar--*/
+.sticky {
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    background: #4e51537c;
+    height: 0px;
+    z-index: 1;
+}
+
+.navbar-toggler {
+    color: rgb(0, 0, 0);
+    border-color: black;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.753);
+    transition-duration: 0.8s;
+    padding-top: 16px;
+    padding-bottom: 0px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(0, 0, 0);
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(0, 0, 0);
+}
+.navbar-light .navbar-brand {
+    color: rgba(0,0,0,.9);
+    transition-duration: 0.8s;
+}
 
 .navbar {
-    width: 100vw;
-}
-
-.bg-light {
-    background-color: transparent !important;
-}
-
-.navbar-light .navbar-toggler {
-    color: rgba(0,0,0,.5);
-    border-color: transparent;
-}
-
-/*--------------------------------------------------Footer Bar--*/
-
-.footer-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-bottom: 15px;
-    vertical-align: baseline;
- }
-
- .socialicons {
-    float: right;
     position: relative;
-    top: 20px;
-    left: -10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    height: 55px;
+}
+/*--------------------------------------------------Footer Bar--*/
+#footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 114px;
+    line-height: 1px;
+    background: #05080ada;
+    padding-top: 15px;
 }
 
-.heading-footer {
-    /*font-size: 18px;*/
-    color: #fffafa;
-    font-weight: 500;
-    margin-left: 15px;
+@media only screen and (max-width: 414px) {
+#footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 45px;
+    line-height: 1px;
+    background-color: #4e5153;
+    padding-top: 0px;
+    }
 }
 
-.text-footer {
-    /*font-size: 16px;*/
+.socialicons {
+    float: right;
+}
+@media only screen and (max-width: 414px) {
+    .socialicons {
+    float: right;
+    padding-top: 0px;
+        }
+}
+
+.meetup-title {
+    font-size: 22px;
     color: #fffafa;
     font-weight: 200;
-    list-style-type: none
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.main-heading {
-    /*font-size: 28px;*/
-    font-weight: 600;
-    color: #333;
+.nav-link-footer {
+    font-size: 14px;
+    color: #fffafa;
+    font-weight: 200;
+    padding-left: 20px;
+    list-style-type: none;
 }
 
-.sub-heading {
-    /*font-size: 20px;*/
-    font-weight: 400;
-    color: #333;
-}
+
+
+
 /*--------------------------------------------------Container--*/
+
 .container-fluid {
     margin: 0;
     padding: 0;
-    width:100%;
-    overflow: scroll;
+    width: 100%;
+    overflow: hidden;
 }
 
 /*--------------------------------------------------Video & Gallery--*/
@@ -170,7 +242,6 @@ a:hover {
     padding: 5px;
     margin-top: 10px;
     background-color: #e6ea0f73;
-    
 }
 
 @media only screen and (max-width: 414px) {
@@ -182,16 +253,24 @@ a:hover {
         margin-top: 20px;
         margin-bottom: 15px;
         background-color: #e6ea0f73;
-        }
     }
+}
 
 .image-card {
     flex: auto;
     max-width: 420px;
     padding: 5px;
     margin-top: 10px;
-    background-color: #e6ea0f73;
-    
+    background-color: #fcfdfdc4;
+    transition-duration: 0.8s;
+}
+
+.image-card:hover {
+    cursor: pointer;
+    transition-duration: 0.8s;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);        
 }
 
 @media only screen and (max-width: 414px) {
@@ -202,16 +281,16 @@ a:hover {
         padding: 5px;
         margin-top: 20px;
         margin-bottom: 15px;
-        background-color: #e6ea0f73;
-        }
+        background-color: #fcfdfdc4;
     }
+}
+
 .discuss-card {
     flex: auto;
     max-width: 420px;
     padding: 5px;
     margin-top: 10px;
     background-color: #0f75ea93;
-    
 }
 
 @media only screen and (max-width: 414px) {
@@ -223,8 +302,8 @@ a:hover {
         margin-top: 20px;
         margin-bottom: 15px;
         background-color: #0f75ea93;
-        }
     }
+}
 
 .cal-card {
     flex: auto;
@@ -232,45 +311,62 @@ a:hover {
     padding: 5px;
     margin-top: 10px;
     background-color: #ea0f0fc2;
-    
 }
+
 @media only screen and (max-width: 414px) {
-.cal-card {
-    flex: auto;
-    max-width: 410px;
-    border-top-left-radius: 20px;
-    padding: 5px;
-    margin-top: 20px;
-    margin-bottom: 15px;
-    background-color: #ea0f0fc2;
+    .cal-card {
+        flex: auto;
+        max-width: 410px;
+        border-top-left-radius: 20px;
+        padding: 5px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        background-color: #ea0f0fc2;
     }
 }
 
+
 /*--------------------------------------------------Image-Modal--*/
+
 #myImg {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.img-modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+#myImg:hover {
+    opacity: 0.7;
 }
 
+
+/* The Modal (background) */
+
+.img-modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+
 /* Modal Content (image) */
+
 #myImg {
     border-radius: 5px;
     cursor: pointer;
@@ -288,7 +384,9 @@ a:hover {
     max-width: 700px;
 }
 
+
 /* Caption of Modal Image */
+
 #caption {
     margin: auto;
     display: block;
@@ -300,8 +398,11 @@ a:hover {
     height: 150px;
 }
 
+
 /* Add Animation */
-.modal-content, #caption {    
+
+.modal-content,
+#caption {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -309,16 +410,26 @@ a:hover {
 }
 
 @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
 }
 
 @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
 }
 
+
 /* The Close Button */
+
 .img-close {
     position: absolute;
     top: 15px;
@@ -336,12 +447,16 @@ a:hover {
     cursor: pointer;
 }
 
+
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+
+@media only screen and (max-width: 700px) {
     .modal-content {
         width: 100%;
     }
 }
+
+
 /*--------------------------------------------------Calandar--*/
 
 
@@ -363,73 +478,76 @@ button {
 
 button-close,
 .close {
-    color:#ff0000;
+    color: #ff0000;
 }
 
 button-close,
 .close:hover {
-    color:#ff0000;
+    color: #ff0000;
 }
+
+
 /*--------------------------------------------------Media-Queries--*/
-/*  Auto-resizable-iframe code was sourced from  */ 
+
+
+/*  Auto-resizable-iframe code was sourced from  */
+
+
 /* https://stackoverflow.com/users/432801/darwin */
 
 .auto-resizable-iframe {
-  max-width: 420px;
-  margin: 0px auto;
+    max-width: 420px;
+    margin: 0px auto;
 }
 
-.auto-resizable-iframe > div {
-  position: relative;
-  padding-bottom: 75%;
-  height: 0px;
+.auto-resizable-iframe>div {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0px;
 }
 
 .auto-resizable-iframe iframe {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
 }
 
 
 /* Responsive iFrame for google calandar sourced from https://profromgo.com/blog/google-calendar-responsive/ */
 
 .responsive-iframe-container {
-position: relative;
-padding-bottom: 56.25%;
-padding-top: 30px;
-height: 0;
-overflow: hidden;
-border-radius: 8px;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .responsive-iframe-container iframe,
 .vresponsive-iframe-container object,
 .vresponsive-iframe-container embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-
-
 @media only screen and (max-width: 414px) {
-iframe {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    iframe {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
-
 @media only screen and (min-width: 415px) {
-.vidcard-header {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    .vidcard-header {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

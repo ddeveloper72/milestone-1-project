@@ -4,12 +4,12 @@
 
 ## **The project idea is of a website for drone enthusiasts**
 
->The purpose of the website is to let people who are interested in flying drones and photographers who like to use drones, to come together to collaborate and enjoy flying their drones at locations in Ireland.  The website will present videos from YouTube, and still images of drones. 
-The page is made up of the following pages, using semantic HTML5 and will use a Bootstrap grid layout which will transition for a mobile first design.
+>The purpose of the website is to let people who are interested in flying drones as well as photographers who use drones as well or who would like to be able to collaborate with drone pilots, to come together and enjoy their hobbies together.  at locations all over Ireland.  The website will present videos from YouTube of drone flights and still images of drones as well as taken from drones. 
+The site is made up of the following pages, using semantic HTML5 and will use a Bootstrap grid layout which will facilitate the transitions for a mobile first design.
 
 # *Design brief:*
 
->This project is about creating a basic website that incorporates many of the elements learned in this section.
+>This is a Milestone 1 project, about creating a website focused on the UX.  As per the project guide-lines, it is to demonstrate lessons learned in this section HTML and CSS User-Centric Front End Development.
 
 >Common sections to all the remaining pages:
 Structure will be a bootstrap grid.  I used as site called [Shoelace - Visual Bootstrap 3 Grid Builder](http://shoelace.io) to help me plan the grid for desk top then to see what the mobile approach may look like.
@@ -19,7 +19,7 @@ Structure will be a bootstrap grid.  I used as site called [Shoelace - Visual Bo
 | Nav bar          | col-sm-12   |
 | Header           | col-sm-12   |
 | Section, Article | col-sm-8    |
-| Section, Asside  | col-md-4    |
+| Section, Aside  | col-md-4    |
 | Footer, Meetups  | col-sm-8    |
 | Footer, Socials  | col sm-4    |
 
