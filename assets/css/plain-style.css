@@ -389,6 +389,11 @@ a:hover {
     }
 }
 
+.col-centered {
+  float: none;
+  margin-right: 1%;
+  margin-left: 4%;
+}
 
 /*--------------------------------------------------Image-Modal--*/
 
