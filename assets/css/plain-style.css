@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
+/*--------------------------------------------------Wrapper--*/
+#wrapper {
+    /*display: block;*/
+    position: fixed;
+    min-height: 100vh;
+    width: 100w;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 /*--------------------------------------------------Font Styles--*/
 
 .h1,
@@ -47,13 +59,19 @@ a:hover {
     -ms-transform: scale(1.2);        
 }
 
-.jumbotron .h1,
-.jumbotron h1 {
+.jumbotron .h1, .jumbotron h1 {
+    font-size: 2.5rem;
     color: #ffffff;
 }
 
-.jumbotron .p,
-.jumbotron p {
+@media only screen and (max-width: 320px) {
+    .jumbotron .h1, .jumbotron h1 {
+        font-size: 1.5rem;
+        color: #ffffff;
+    }
+}
+
+.jumbotron .p, .jumbotron p {
     color: #ffffff;
 }
 
@@ -99,7 +117,7 @@ a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
 }
-/*--------------------------------------------------Sign-Up--*/
+/*--------------------------------------------------Sign-Up modal & button Styles-*/
 
 .jumbotron {
     padding-top: 30px;
@@ -112,44 +130,44 @@ a:hover {
 
 .signup-modal {
     position: absolute;
+    width: 65%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px #856404d9;
+}
 
-/*--------------------------------------------------Nav Bar--*/
+.btn-group-lg>.btn, .btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
+@media only screen and (max-width: 320px) {
+.btn-group-lg>.btn, .btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    }
+}
+
+.help-block {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/*--------------------------------------------------Nav Bar Header--*/
 .sticky {
     top: 0;
-    position: fixed;
     width: 100vw;
-    background: #4e51537c;
-    height: 0px;
+    position: fixed;
     z-index: 1;
-}
-
-.navbar-toggler {
-    color: rgb(0, 0, 0);
-    border-color: black;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: rgba(0, 0, 0, 0.753);
-    transition-duration: 0.8s;
-    padding-top: 16px;
-    padding-bottom: 0px;
-}
-
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: rgb(0, 0, 0);
-}
-
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: rgb(0, 0, 0);
-}
-.navbar-light .navbar-brand {
-    color: rgba(0,0,0,.9);
-    transition-duration: 0.8s;
 }
 
 .navbar {
@@ -166,18 +184,64 @@ a:hover {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: .5rem 1rem;
-    height: 55px;
+    height: 50px;
+    background-color: #313131;
+    margin-bottom: 0px;
+    }
+
+.navbar-dark .navbar-toggler{
+    color: rgba(0, 0, 0, 0.71);
+    border-color: rgba(0,0,0,.1);
 }
-/*--------------------------------------------------Footer Bar--*/
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.74);
+    transition-duration: 0.8s;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    padding: 10px;
+    text-align: left;
+    
+}
+
+@media only screen and (max-width: 768px) {
+.navbar-dark .navbar-nav .nav-link {
+    text-align: center;
+    background-color: #0d1e2fad;
+    }
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(252, 252, 252);
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.navbar-brand {
+    transition-duration: 0.8s;
+}
+
+.navbar-brand:hover {
+    transition-duration: 0.8s;
+}
+
+
+/*--------------------------------------------------Footer--*/
 #footer {
+    position:fixed;
+    bottom: 0;
     position: fixed;
-    bottom: 0px;
-    width: 100%;
-    height: 114px;
-    line-height: 1px;
-    background: #05080ada;
-    padding-top: 15px;
+    width: 100vw;
+    
 }
+
 
 @media only screen and (max-width: 414px) {
 #footer {
@@ -186,19 +250,19 @@ a:hover {
     width: 100%;
     height: 45px;
     line-height: 1px;
-    background-color: #4e5153;
     padding-top: 0px;
     }
 }
 
-.socialicons {
-    float: right;
-}
-@media only screen and (max-width: 414px) {
+
+@media only screen and (max-width: 320px) {
     .socialicons {
-    float: right;
+    color: #ffffff;
     padding-top: 0px;
-        }
+    font-size:10px;
+    padding: 0px;
+    margin: 0pcx
+            }
 }
 
 .meetup-title {
@@ -207,14 +271,7 @@ a:hover {
     font-weight: 200;
     padding-left: 15px;
     padding-right: 15px;
-}
-
-.nav-link-footer {
-    font-size: 14px;
-    color: #fffafa;
-    font-weight: 200;
-    padding-left: 20px;
-    list-style-type: none;
+    padding-bottom: 15px;
 }
 
 
@@ -225,15 +282,22 @@ a:hover {
 .container-fluid {
     margin: 0;
     padding: 0;
-    width: 100%;
-    overflow: hidden;
+    width: 100vw;
+    overflow: scroll;
 }
 
 /*--------------------------------------------------Video & Gallery--*/
 
 .card-body {
     flex: auto;
-    padding: 1.25rem;
+    padding: 1px;
+}
+
+.card-body p {
+    flex: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 .video-card {

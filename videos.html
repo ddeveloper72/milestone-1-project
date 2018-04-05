@@ -2,72 +2,46 @@
 <html lang="en">
 
 <head>
-    <title>Irish Drone Club</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"
-    />
-    <link rel="stylesheet" href="assets/css/plain-style.css" type="text/css" />
+        <title>Irish Drone Club</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"
+        />
+        <link rel="stylesheet" href="assets/css/plain-style.css" type="text/css" />
 </head>
-
 <body>
-    <div class="container-fluid callout-bg-lg">
-        <header class="sticky">
-            <nav class="navbar navbar-light navbar-expand-lg">
-                <a class="navbar-brand" href="index.html">Irish Drones</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-items">
-                            <a class="nav-link" href="stills.html">Gallery</a>
-                        </li>
-                        <li class="nav-items">
-                            <a class="nav-link" href="meetups.html">Meet-ups</a>
-                        </li>
-                        <li class="nav-items">
-                            <a class="nav-link" data-toggle="modal" href="#logInModal">Login</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="myModalLabel2">Member Login</h4>
-                            <button type="button button-close" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label for="email">Email address</label>
-                                    <input type="email" class="form-control" id="SignInEmail" placeholder="Email">
-                                    <p class="help-block">To log in, please enter your email address.</p>
-                                </div>
-                                <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <input type="password" class="form-control" id="SignInPassword" placeholder="Password">
-                                </div>
-                                <button type="submit" class="btn btn--cta">Sign In</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+    <header class="sticky">
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">Irish Drones</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-items">
+                        <a class="nav-link" href="stills.html">Gallery</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link" href="meetups.html">Meet-ups</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link" data-toggle="modal" href="#logInModal">Login</a>
+                    </li>
+                </ul>
             </div>
-        </header>
-        <section>
-            <div class="container">
+        </nav>
+    </header>
+
+    <section>
+        <div id="wrapper">
+            <div class="container-fluid callout-bg-lg">
                 <div class="pagetitle">
-                    <h1 class="text-center">Video</h1>
+                    <h1 class="text-center">Gallery</h1>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
@@ -96,48 +70,80 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <footer id="footer">
-            <div class="col-sm-4 d-none d-sm-block">
-                <nav class="navbar navbar-dark navbar-expand-lg">
-                    <a class="meetup-title" href="meetups.html">Meetups</a>
-                    <ul class="navbar-nav">
-                        <li class="nav-items">
-                            <a class="nav-link nav-link-footer" href="#">
-                                <i class="plain-text fa fa-leaf">&nbsp;&nbsp;</i>Event 1</a>
-                        </li>
-                        <li class="nav-items">
-                            <a class="nav-link nav-link-footer" href="#">
-                                <i class="plain-text fa fa-tree">&nbsp;&nbsp;</i>Event 2</a>
-                        </li>
-                        <li class="nav-items">
-                            <a class="nav-link nav-link-footer" href="#">
-                                <i class="plain-text fa fa-coffee">&nbsp;&nbsp;</i>Event 3</a>
-                        </li>
-                    </ul>
-                </nav>
+        </div>
+    </section>
+    <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel2">Member Login</h4>
+                    <button type="button button-close" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="SignInEmail" placeholder="Email">
+                            <p class="help-block">To log in, please enter your email address.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="SignInPassword" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn--cta">Sign In</button>
+                    </form>
+                </div>
             </div>
-            <div class="col-sm-12">
-                <ul class="list-inline">
-                    <li class="nav-items">
-                        <a class="nav-link socialicons" href="#" target="_blank">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
+        </div>
+    </div>
+    <footer id="footer">
+            <nav class="navbar navbar-dark navbar-expand-lg">
+                <a class="d-xs-block d-mb-none" href="meetups.html">
+                    <i class="plain-text far fa-map"></i></a>
+                </a>
+                <a class="meetup-title d-none d-mb-block" href="meetups.html">
+                    Meetups</a>
+                
+                <ul class="navbar-nav d-none d-md-block">
+                    <li class="nav-items list-inline-item">
+                        <a class="nav-link nav-link-footer" href="#">
+                            <i class="fab fa-leanpub">&nbsp;&nbsp;</i> Training</a>
+                    </li>
+                    <li class="nav-items list-inline-item">
+                        <a class="nav-link nav-link-footer" href="#">
+                            <i class="fas fa-binoculars">&nbsp;&nbsp;</i> Scenic Areas</a>
+                    </li>
+                    <li class="nav-items list-inline-item">
+                        <a class="nav-link nav-link-footer" href="#">
+                            <i class="far fa-check-square">&nbsp;&nbsp;</i> Safety</a>
+                    </li>
+                </ul>
+    
+                <ul class="navbar-nav list-inline-item d-none d-md-block">
+                        <li class="nav-items list-inline-item">
+                        <a class="nav-link" href="#" target="_blank">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
                         </a>
                     </li>
-                    <li class="nav-items">
-                        <a class="nav-link socialicons" href="#" target="_blank">
-                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                    <li class="nav-items list-inline-item">
+                        <a class="nav-link" href="#" target="_blank">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
                         </a>
                     </li>
-                    <li class="nav-items">
-                        <a class="nav-link socialicons" href="#" target="_blank">
-                            <i class="fa fa-flickr" aria-hidden="true"></i>
+                    <li class="nav-items list-inline-item">
+                        <a class="nav-link" href="#" target="_blank">
+                            <i class="fab fa-flickr" aria-hidden="true"></i>
                         </a>
                     </li>
                 </ul>
-            </div>
+                
+            </nav>
         </footer>
-    </div>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
