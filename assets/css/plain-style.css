@@ -146,13 +146,18 @@ a:hover {
     padding-bottom: 30px;
     margin-bottom: 30px;
     color: inherit;
-    background-color: #0d1e2fad;
+    transition: background-color 3s ease-in-out;
+    background-color: #0d1e2f9e;
     z-index: 1;
+}
+
+.jumbotron:hover {    
+    background-color: #0d1e2f2a;    
 }
 
 .signup-modal {
     position: absolute;
-    max-width: 65%;
+    max-width: 400px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -409,7 +414,7 @@ img {
     max-width: 420px;
     padding: 5px;
     margin-top: 10px;
-    background-color: #ea0f0fc2;
+    background-color: #4D6A79;
 }
 
 @media only screen and (max-width: 414px) {
@@ -420,7 +425,7 @@ img {
         padding: 5px;
         margin-top: 20px;
         margin-bottom: 15px;
-        background-color: #ea0f0fc2;
+        background-color: rgba(77, 106, 121, 0.712);
     }
 }
 
@@ -556,9 +561,13 @@ img {
 }
 
 
-/*--------------------------------------------------Calandar--*/
-
-
+/*--------------------------------------------------Meetups--*/
+.bg-overlay {
+    background-color: rgba(0, 0, 0, 0.233)
+}
+.about-us {
+    background-color: #fffafa;
+}
 /*--------------------------------------------------Buttons--*/
 
 button {
