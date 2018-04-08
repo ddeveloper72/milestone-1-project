@@ -359,11 +359,11 @@ a:hover {
 
 .video-card {
     flex: auto;
-    max-width: 420px;
     padding: 5px;
     margin-top: 10px;
-    background-color: #e6ea0f73;
 }
+
+
 
 @media only screen and (max-width: 414px) {
     .video-card {
@@ -373,8 +373,11 @@ a:hover {
         padding: 5px;
         margin-top: 20px;
         margin-bottom: 15px;
-        background-color: #e6ea0f73;
     }
+}
+
+.youtube {
+    margin-bottom: 100px;
 }
 
 .image-card {
@@ -679,8 +682,7 @@ button-close,
 /* https://stackoverflow.com/users/432801/darwin */
 
 .auto-resizable-iframe {
-    max-width: 420px;
-    margin: 0px auto;
+    margin-bottom: 100px;
 }
 
 .auto-resizable-iframe>div {
