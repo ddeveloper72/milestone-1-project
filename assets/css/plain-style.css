@@ -82,11 +82,24 @@ a:hover {
 }
 
 #dark-link {
-    color: #f90404;;
+    color: #f90404;
     font-weight: 400;
     text-decoration: none;
     background-color: transparent;
 }
+
+#email-me {
+    color: inherit;
+    font-weight: 400;
+    text-decoration:italic;
+    background-color: transparent;
+}
+
+#push-right {
+    float: right;
+    padding-right: 10px;
+}
+
 
 .jumbotron .h1, .jumbotron h1 {
     font-size: 2.5rem;
@@ -338,6 +351,10 @@ a:hover {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 2px;
+}
+
+.card-header {
+    padding: 4px 8px;
 }
 
 .video-card {
@@ -600,6 +617,7 @@ img {
     padding: 8px 40px;
     font-style: italic;
     background-color: #8bbf8870;
+    line-height: 2.1;
 }
 
 .list-group-h3 {
@@ -621,6 +639,9 @@ img {
     overflow: hidden;
 }
 
+.list-group-item:last-child {
+    line-height: 2.1;
+}
  
 /*--------------------------------------------------Buttons--*/
 
