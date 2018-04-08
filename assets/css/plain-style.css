@@ -1,26 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:200,200i,300,300i,400,400i,500,500i,700,700i');
 
 /*--------------------------------------------------Wrapper & body--*/
 #wrapper {
     display: block;
     position: fixed;
-    min-height: 100vh;
-    width: 100w;
+    /* height: 100vh; */
+    /* width: 100vw; */
     top: 0px;
-    bottom: 50px;
+    /* bottom: 0px; */
     left: 0;
     right: 0;
-    overflow: hidden;
 }
 
 /*--------------------------------------------------Container--*/
 
 .container-fluid {
-    top: 50px;
-    margin: 0;
+    display:inline-block;
+    margin-top: 50px;
+    margin-bottom: 65px;
     padding: 0;
     width: 100vw;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 @media only screen and (max-width: 768px) {
@@ -48,13 +48,13 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Ubuntu+Condensed", sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1;
 }
 
 body {
     margin: 0;
-    font-family: "Ubuntu+Condensed", sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1;
     margin-bottom: 60px;
 }
@@ -79,6 +79,13 @@ a:hover {
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);        
+}
+
+#dark-link {
+    color: #f90404;;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: transparent;
 }
 
 .jumbotron .h1, .jumbotron h1 {
@@ -280,9 +287,9 @@ a:hover {
 
 /*--------------------------------------------------Footer--*/
 #footer {
+    display:inline-block;
     position:fixed;
     bottom: 0;
-    position: fixed;
     width: 100vw;
     
 }
@@ -306,7 +313,7 @@ a:hover {
     padding-top: 0px;
     font-size:10px;
     padding: 0px;
-    margin: 0pcx
+    margin: 0pc;
             }
 }
 
@@ -411,7 +418,7 @@ img {
 }
 .cal-card {
     flex: auto;
-    max-width: 420px;
+    /*max-width: 420px;*/
     padding: 5px;
     margin-top: 10px;
     background-color: #4D6A79;
@@ -429,6 +436,9 @@ img {
     }
 }
 
+.googlemap {
+    margin-bottom: 100px;
+}
 
 
 /*--------------------------------------------------Image-Modal--*/
@@ -568,6 +578,50 @@ img {
 .about-us {
     background-color: #fffafa;
 }
+
+.activities {
+    background-color: #fffafa;
+    margin-right:20px;
+    margin-left:20px;
+    width: auto;
+}
+
+.organisers {
+    background-color: #fffafa;
+    margin-right:20px;
+    margin-left:20px;
+    width: auto;
+}
+
+.profile-img {
+    border-radius: 50%;
+}
+.meetups-intro {
+    padding: 8px 40px;
+    font-style: italic;
+    background-color: #8bbf8870;
+}
+
+.list-group-h3 {
+     padding: 8px 16px;
+}
+
+.list-group-ul {
+    padding: 8px 16px;
+    
+}
+
+.list-group-ul li {
+    padding: 8px 16px;
+    
+}
+
+.name-bar {
+    width: 100%;
+    overflow: hidden;
+}
+
+ 
 /*--------------------------------------------------Buttons--*/
 
 button {
