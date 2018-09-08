@@ -4,7 +4,7 @@
 
 ![alt text](https://github.com/ddeveloper72/milestone-1-project/blob/master/assets/images/Readme/title-page.png "Fig 1. Title Page")
 
-Fig 1. [Title Page](https://milestone-1-project-ddeveloper72.c9users.io/index.html)
+Fig 1. [Title Page](https://ddeveloper72.github.io/milestone-1-project)
 
 ## **The project idea is of a website for drone enthusiasts**
 
@@ -68,7 +68,7 @@ https://milestone-1-project-ddeveloper72.c9users.io/index.html
  
 ### First Page:
 
-https://milestone-1-project-ddeveloper72.c9users.io/stills.html
+https://ddeveloper72.github.io/milestone-1-project/stills.html
 
 >This section of the site is to showcase some domestic drone images that have been submitted by the members of the group.  The image the article section will have an image container displaying 4 images, col-sm-8 col-md-2, col-md-2, col-md-2, col-md-2.  The aside will then have discussion points from the users about the images.
  
@@ -79,7 +79,7 @@ https://milestone-1-project-ddeveloper72.c9users.io/stills.html
 
 ### Second Page:
 
-https://milestone-1-project-ddeveloper72.c9users.io/videos.html
+https://ddeveloper72.github.io/milestone-1-project/videos.html
 
 >The site lets them showcase a feature video of the month, filmed from a drone.  There may be several other videos from previous months that a user can select and play. The article section will contain a video player window from YouTube which will fill the area: col-sm-8.  Beside this is the aside with textual contend containing discussion and a link to the video being sown in the article.
  
@@ -91,7 +91,7 @@ https://milestone-1-project-ddeveloper72.c9users.io/videos.html
 
 ### Third Page:
 
-https://milestone-1-project-ddeveloper72.c9users.io/meetups.html
+https://ddeveloper72.github.io/milestone-1-project/meetups.html
 
 >This section of the web page is divided into four sections, the header, article and aside and footer.  My initial design is to use a google map with location pins in the article. The Aside will have meetup information and possibly a calendar entry system so that users can update their drone flight diary.
  
@@ -99,4 +99,4 @@ https://milestone-1-project-ddeveloper72.c9users.io/meetups.html
 
 *Fig 9. Third page - Meetups*
 
-Site Link: https://milestone-1-project-ddeveloper72.c9users.io/index.html
+Site Link: https://ddeveloper72.github.io/milestone-1-project/index.html
