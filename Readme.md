@@ -1,10 +1,10 @@
 # **User Centric Front-End Development Milestone Project**
 
-# *Irish Drone Club*
+# *[Irish Drone Club](https://ddeveloper72.github.io/milestone-1-project)*
 
 ![alt text](https://github.com/ddeveloper72/milestone-1-project/blob/master/assets/images/Readme/title-page.png "Fig 1. Title Page")
 
-Fig 1. [Title Page](https://ddeveloper72.github.io/milestone-1-project)
+Fig 1. Title Page
 
 ## **The project idea is of a website for drone enthusiasts**
 
@@ -57,7 +57,7 @@ Fig 2. Grid layout
 
 ### Landing Page:
 
-https://milestone-1-project-ddeveloper72.c9users.io/index.html
+https://ddeveloper72.github.io/milestone-1-project/index.html
 
 >A hero image fills the page.  There is a compressed hamburger navigation icon in the top right corner of the page, that lets users enter the different sections of the site. The image will be vertically centred and have the full view height and be fixed absolute for smaller screens. Over the top of the image there will be a transparent nav bar with a compressed hamburger nav icon that will allow the user to navigate further into the site. The nav menu will have drill-down properties and hover effects to show successful clicks.  Below the hero image, is a transparent footer which will contain the social links to the site.
 
