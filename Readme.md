@@ -6,6 +6,10 @@
 
 Fig 1. Title Page
 
+## Note
+
+  * This was my very first website!  I began learning to code with the [Code Institute](https://courses.codeinstitute.net) in February 2018.  One month in, this was my milestone 1 project which was created as a part of User Centric Front End Development.  I have chosen not to modify or improve this work in any way, because it is a snapshot of what I had learned at this point in time.
+
 ## **The project idea is of a website for drone enthusiasts**
 
 >The purpose of the website is to let people who are interested in flying drones as well as photographers who use drones as well or who would like to be able to collaborate with drone pilots, to come together and enjoy their hobbies together.  at locations all over Ireland.  The website will present videos from YouTube of drone flights and still images of drones as well as taken from drones. 
